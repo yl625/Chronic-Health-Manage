@@ -1,8 +1,8 @@
 <template>
-  <div class="h-screen w-full">
-    <el-container class="h-full w-full">
+  <div class="h-screen w-full bg-body-main bg-cover bg-center bg-no-repeat">
+    <el-container class="h-full w-full !bg-transparent">
       <!-- 侧边栏 -->
-      <el-aside width="256px" class="h-full !bg-primary">
+      <el-aside width="256px" class="h-full">
         <SideMenu />
       </el-aside>
       <!-- 内容区域 -->
