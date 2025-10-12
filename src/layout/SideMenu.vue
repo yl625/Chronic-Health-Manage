@@ -1,12 +1,12 @@
 <template>
     <div class="w-64 h-full flex flex-col !shadow-r-sm border border-gray-200 rounded-sm">
-        <h3 class="font-bold text-xl !text-white text-center w-full h-[60px] leading-[60px] !bg-primary !text-shadow">
+        <h3 class="font-bold text-xl !text-title-text text-center w-full h-[60px] leading-[60px] !text-shadow-sm">
             慢性病健康管理
         </h3>
-        <el-menu @select="handleMenuSelect" class="!bg-primary flex-1 !border-none">
-            <el-menu-item v-for="item in menuList" :key="item.path" :index="item.path" class="!text-white !text-lg">
+        <el-menu @select="handleMenuSelect" class="flex-1 !border-none">
+            <el-menu-item v-for="item in menuList" :key="item.path" :index="item.path" class="!text-lg">
                 <el-icon class="mr-2">
-                    <component :is="item.icon" />
+                    <component :is="item.icon" class="!text-primary" />
                 </el-icon>
                 <span>{{ item.name }}</span>
             </el-menu-item>

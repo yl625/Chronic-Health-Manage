@@ -1,9 +1,9 @@
 <template>
     <div class="w-full">
-        <el-menu mode="horizontal"
-            class="flex items-center justify-between w-full shadow-sm border-b border-gray-200 rounded-sm">
+        <el-menu mode="horizontal" active-text-color="#17b863"
+            class="flex items-center justify-between w-full !bg-transparent border-b border-gray-200 shadow-sm">
             <!-- 折叠/展开按钮 -->
-            <div>
+            <div class="!text-3xl !text-primary cursor-pointer">
                 <el-icon>
                     <Fold />
                 </el-icon>
@@ -14,7 +14,7 @@
 
 
             <div class="flex items-center gap-4">
-                <el-menu-item v-for="item in menuList" :key="item.path" :index="item.path">
+                <el-menu-item v-for="item in menuList" :key="item.path" :index="item.path" class="!text-lg">
                     <el-icon>
                         <component :is="item.icon" />
                     </el-icon>
@@ -26,7 +26,7 @@
                 <div class="flex items-center mr-8">
                     <el-menu-item>
                         <el-dropdown trigger="hover" placement="bottom" class="cursor-pointer">
-                            <el-avatar src="@/assets/user.jpg" class="!w-12 !h-12">
+                            <el-avatar :src="userAvatar" class="!w-12 !h-12">
                             </el-avatar>
                             <template #dropdown>
                                 <el-dropdown-menu>
@@ -41,7 +41,7 @@
                             </template>
                         </el-dropdown>
                     </el-menu-item>
-                    <p class="text-gray-500">昵称</p>
+                    <p class="text-gray-500 text-lg">昵称</p>
                 </div>
             </div>
         </el-menu>
@@ -52,6 +52,7 @@
 <script setup lang="js" name="Header">
 import { BellFilled, QuestionFilled, Operation } from '@element-plus/icons-vue';
 import { ref, markRaw } from 'vue';
+import userAvatar from '@/assets/images/user.jpg'
 
 
 const menuList = ref([
