@@ -14,7 +14,7 @@
         <!-- 内容 -->
         <el-main class="!bg-body-main bg-cover bg-center bg-no-repeat">
           <router-view
-            class="min-h-max-content h-max-content w-full shadow-md bg-white p-6 border-b border-gray-200 rounded-md" />
+            class="min-h-max-content h-max-content w-full shadow-md bg-white p-4 border-b border-gray-200 rounded-md" />
         </el-main>
         <!-- 底部 -->
         <!-- <el-footer height="60px" class="p-0">

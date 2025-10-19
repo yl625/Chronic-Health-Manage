@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .a {
+                fill: #00b354;
+                stroke: #00b354;
+            }
+
+            .b {
+                fill: #fff;
+            }
+
+            .c {
+                stroke: none;
+            }
+
+            .d {
+                fill: none;
+            }
+        </style>
+    </defs>
+    <g transform="translate(-1168 -259)">
+        <g class="a" transform="translate(1168 259)">
+            <circle class="c" cx="8" cy="8" r="8" />
+            <circle class="d" cx="8" cy="8" r="7.5" />
+        </g>
+        <path class="b"
+            d="M147.822,304.515h-1.375a.938.938,0,0,0-.76.39L141.08,311.3l-2.088-2.9a.932.932,0,0,0-.758-.39H136.86a.235.235,0,0,0-.191.371l3.652,5.065a.932.932,0,0,0,1.516,0l6.173-8.558A.234.234,0,0,0,147.822,304.515Z"
+            transform="translate(1033.66 -41.837)" />
+    </g>
+</svg>

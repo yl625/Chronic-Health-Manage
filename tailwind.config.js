@@ -55,9 +55,9 @@ export default {
         lg: "4px 4px 8px rgba(0, 0, 0, 0.5)",
       },
       backgroundImage: {
-        "body-main": "url('@/assets/images/bg-body-m.png')",
-        body: "url('@/assets/images/bg-body.png')",
-        "body-Header": "url('@/assets/images/bg-primary-secondary.png')",
+        "body-main": "url('@/assets/images/bg/bg-body-m.png')",
+        body: "url('@/assets/images/bg/bg-body.png')",
+        "body-Header": "url('@/assets/images/bg/bg-primary-secondary.png')",
       },
     },
   },
